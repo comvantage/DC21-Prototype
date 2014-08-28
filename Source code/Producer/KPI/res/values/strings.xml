@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">  KPI Overview</string>
+    <string name="action_settings">Settings</string>
+	<string name="str_filter">Filter</string>
+	<string name="str_vozicek">0</string>
+	<string name="tab1">Home</string>
+	<string name="tab2">Shop</string>
+	<string name="tab3">News</string>
+    <string name="grid1">Label1:</string>
+	<string name="grid2">Label2:</string>
+    
+    <string name="txtgrid1">value1</string>
+	<string name="txtgrid2">value2</string>    
+	<string name="view">&lt;u>View&lt;/u></string>
+	<string-array name="shirt_sizes">
+	    <item>XXS</item>
+	    <item>XS</item>
+	    <item>S</item>
+	    <item>M</item>
+	    <item>L</item>
+	    <item>XL</item>
+	    <item>XXL</item>
+	</string-array>
+
+	<string-array name="companies">
+	    <item>Proshirt d.o.o.</item>
+	    <item>PISK d.o.o.</item>
+	    <item>ComVantage GmbH</item>
+	</string-array>
+	
+	<string-array name="actions">
+	    <item>All</item>	    
+	    <item>Marketing</item>
+	    <item>Manufacturing</item>
+	    <item>Sustainability</item>
+	    <item>Turnover/Revenue</item>
+	</string-array>
+	
+	<string-array name="datearray">  
+	    <item>February 2014</item>
+	    <item>March 2014</item>
+	    <item>April 2014</item>
+	    <item>May 2014</item>
+	    <item>June 2014</item>
+	</string-array>	
+		
+	
+	
+</resources>

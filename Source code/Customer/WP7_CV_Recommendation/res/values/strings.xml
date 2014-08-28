@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Recommendation</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string-array name="Gender">
+        <item >Female</item>
+        <item >Male</item>
+    </string-array>
+    <string-array name="Age">
+        <item >18 - 24</item>
+        <item >25 - 30</item>
+        <item >31 - 40</item>
+        <item >40 - 50</item>
+    </string-array>
+    <string-array name="Weight">
+        <item >41 - 50 kg</item>
+        <item >51 - 60 kg</item>
+        <item >61 - 70 kg</item>
+        <item >71 - 80 kg</item>
+        <item >81 - 90 kg</item>
+        <item >91 - 100 kg</item>
+    </string-array>
+    <string-array name="Body">
+        <item >Triangle Up</item>
+        <item >Round</item>
+    </string-array>
+    <string-array name="Color">
+        <item >Red</item>
+        <item >Green</item>
+        <item >Blue</item>
+        <item >Orange</item>
+        <item >Purple</item>
+        <item >Yellow</item>
+    </string-array>
+    <string-array name="Style">
+        <item >Elegant</item>
+        <item >Casual</item>
+    </string-array>
+    
+    <string name="str_filter">Filter</string>
+	<string name="str_vozicek">0</string>
+	<string name="tab1">Home</string>
+	<string name="tab2">Shop</string>
+	<string name="tab3">News</string>
+
+</resources>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="450dp"
+    android:layout_height="wrap_content"
+    android:background="#fff"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+        <ImageView
+            android:id="@+id/ivShirt"
+            android:layout_width="210dp"
+            android:layout_height="210dp"
+            android:src="@drawable/qrcode01" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="40dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tvOrderStat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:text="Receiver:"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#000"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="StickIt GmbH"
+                android:textAppearance="?android:attr/textAppearance"
+                android:textColor="#000" />
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hans-Sachs-Gasse 16"
+                android:textAppearance="?android:attr/textAppearance"
+                android:textColor="#000" />
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="01187 Dresden"
+                android:textAppearance="?android:attr/textAppearance"
+                android:textColor="#000" />
+
+            <TextView
+                android:id="@+id/tvShirt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="10dp"
+                android:text="Sender:"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#000"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ProShirt Inc"
+                android:textAppearance="?android:attr/textAppearance"
+                android:textColor="#000" />
+            <TextView
+                android:id="@+id/tvEmbroidery"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Chemnitzer Strasse 48"
+                android:textAppearance="?android:attr/textAppearance"
+                android:textColor="#000" />
+            <TextView
+                android:id="@+id/tvSendFromCity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="01187 Dresden"
+                android:textAppearance="?android:attr/textAppearance"
+                android:textColor="#000" />
+
+        </LinearLayout>
+        
+        </LinearLayout>
+
+<Button
+    android:id="@+id/bPrintC"
+    android:layout_width="200dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_marginTop="20dp"
+    android:text="Print Label"
+    android:textColor="#000"
+    android:textStyle="bold" />
+
+</LinearLayout>

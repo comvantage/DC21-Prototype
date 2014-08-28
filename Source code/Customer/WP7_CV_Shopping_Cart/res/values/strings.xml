@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Shopping Cart</string>
+    <string name="action_settings">Settings</string>
+    
+    <string-array name="ShirtSize">
+       	<item>XS</item>
+        <item>S</item>
+        <item>M</item>
+        <item>L</item>
+        <item>XL</item>
+        <item>XXL</item>
+    </string-array>
+    <string name="str_filter">Filter</string>
+	<string name="str_vozicek">0</string>
+	<string name="tab1">Home</string>
+	<string name="tab2">Shop</string>
+	<string name="tab3">News</string>
+	<string-array name="Address">
+       	<item>Home</item>
+    </string-array>
+</resources>

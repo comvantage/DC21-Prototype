@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:layout_marginBottom="10dp"
+    android:orientation="horizontal" 
+    android:background="@drawable/griditem_background">
+
+    <TextView
+        android:id="@+id/txtrow1"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="20dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        style="@style/malaPisava"
+        android:text="1"
+        android:layout_weight="1" />
+
+    <TextView
+        android:id="@+id/txtrow2"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"        
+        android:paddingLeft="10dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        style="@style/malaPisava"
+        android:layout_weight="7"
+        android:text="Customers" />
+    
+    <TextView
+        android:id="@+id/txtrow3"
+        android:paddingLeft="10dp"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        style="@style/malaPisava"
+        android:layout_weight="3"
+        android:text="Marketing" />
+   
+    <EditText 
+        android:id="@+id/txtrow4"
+        android:paddingLeft="10dp"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        style="@style/malaPisava"
+        android:layout_weight="3"
+        android:background="@drawable/listitem_textbox"
+        android:text="Actual" />
+    
+    
+    <EditText
+        android:id="@+id/txtrow5"
+        android:paddingLeft="10dp"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"        
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        style="@style/malaPisava"
+        android:background="@drawable/listitem_textbox"        
+        android:layout_weight="3"
+        android:text="Target" />
+
+	<LinearLayout 
+	    android:layout_width="0dp"
+	    android:paddingLeft="30dp"
+    	android:layout_height="wrap_content"
+    	android:orientation="horizontal"
+    	android:gravity="center_vertical"
+    	android:layout_weight="3">
+	    
+    <ImageView
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"                
+        android:id="@+id/imgArrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/arrowup"/>       
+    
+    <TextView
+        android:id="@+id/txtrow6"
+        android:paddingLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/malaPisava"
+        android:text="106 %" />	    	    
+	    
+	</LinearLayout>
+    
+    <TextView
+        android:id="@+id/txtrow7"
+        android:paddingLeft="30dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        style="@style/malaPisava"
+        android:layout_weight="3"
+        android:text="@string/view" />    
+           
+    
+</LinearLayout>

@@ -1,0 +1,8 @@
+<resources>
+
+    <string name="app_name">Orders</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main">CW7_IAF_List_Of_Orders</string>
+
+</resources>

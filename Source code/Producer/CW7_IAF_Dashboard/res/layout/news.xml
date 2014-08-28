@@ -1,0 +1,120 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F6F5F2"
+    android:orientation="vertical"
+    android:paddingBottom="10dp"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:paddingTop="10dp"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="News"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <LinearLayout
+        android:layout_width="900dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="02.10.2014"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="How to combine: Lady in red!"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#FD6609"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="900dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="130dp"
+        android:layout_marginTop="10dp" >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="300dp"
+            android:layout_height="225dp"
+            android:src="@drawable/lady_in_red" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="460dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:scrollHorizontally="false"
+            android:text="Autum startet, the trees changed their color and our style adapts.\n\nHere are some tips for the fashionable ladies:\n\nCall it Ginger, or bumt orange - but all the shades of marmalade have arrived to lift our winter color palette from drab to fab.\n\nMore intense oranges work beautifully on dark/olive skin tones, for those fairer types (especially blondes) go for &apos;ginger&apos;, a more subdued tone of orange.\n\nAccessories with dark brown, tan or camel, for a vintage 70&apos;s feel. It&apos;ll feel like the sun is shining on you, even when it&apos;s winter grey skies."
+            android:textAppearance="?android:attr/textAppearance" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="900dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp" >
+
+        <TextView
+            android:id="@+id/TextView02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="15.9.2014"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/TextView01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="How to combine Dresscode-Shirts - be creative"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#FD6609"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="900dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="130dp"
+        android:layout_marginTop="10dp" >
+
+        <ImageView
+            android:id="@+id/ImageView01"
+            android:layout_width="300dp"
+            android:layout_height="225dp"
+            android:src="@drawable/be_creative" />
+
+        <TextView
+            android:id="@+id/TextView03"
+            android:layout_width="460dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:scrollHorizontally="false"
+            android:text="Do you often stand in front of your wardrobe and you have no clue what to wear or what to combine with what?\n\nWell, you are not the only one having these problems. Therfore we decided to give you some recommendations.\n\nHave a look at our collage to check out the products we recommend. All of them you&apos;ll also find in our shop - so keep looking!"
+            android:textAppearance="?android:attr/textAppearance" />
+
+    </LinearLayout>
+
+</LinearLayout>

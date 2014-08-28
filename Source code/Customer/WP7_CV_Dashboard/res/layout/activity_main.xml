@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eee"
+    android:orientation="vertical"
+    android:paddingBottom="40dp"
+    android:paddingLeft="40dp"
+    android:paddingRight="40dp"
+    android:paddingTop="20dp" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="#c9c9c9"
+        android:paddingBottom="1dp"
+        android:paddingLeft="1dp"
+        android:paddingRight="1dp"
+        android:paddingTop="1dp" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff" >
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minHeight="301dp"
+                android:minWidth="291dp"
+                android:src="@drawable/home01" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:minHeight="389dp"
+                android:minWidth="824dp"
+                android:src="@drawable/home02" />
+
+            <Button
+                android:id="@+id/bShop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/imageView1"
+                android:layout_marginLeft="27dp"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/orange_button"
+                android:minWidth="160dp"
+                android:text="View Shirts"
+                android:textColor="#fff"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+<RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp" >
+
+    <ImageButton
+        android:id="@+id/ibIndividual"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/home03"
+        android:minHeight="121dp"
+        android:minWidth="381dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/home03" />
+
+    <ImageButton
+        android:id="@+id/ibRecommendation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/home04"
+        android:minHeight="121dp"
+        android:minWidth="381dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/home04" />
+
+<ImageButton
+    android:id="@+id/ibContest"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentRight="true"
+    android:background="@drawable/home05"
+    android:minHeight="121dp"
+    android:minWidth="381dp"
+    android:scaleType="fitXY"
+    android:src="@drawable/home05" />
+
+</RelativeLayout>
+</LinearLayout>
