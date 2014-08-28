@@ -34,7 +34,7 @@
                 android:id="@+id/textView3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Miha Kuntu"
+                android:text="Peter Novak"
                 android:textAppearance="?android:attr/textAppearance"
                 android:textColor="#000" />
 
@@ -42,7 +42,7 @@
                 android:id="@+id/textView4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Letonjeva 8"
+                android:text="Hugo wolf Gasse 6a"
                 android:textAppearance="?android:attr/textAppearance"
                 android:textColor="#000" />
 
@@ -50,7 +50,7 @@
                 android:id="@+id/textView5"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="20000 Maribor"
+                android:text="8010 Graz"
                 android:textAppearance="?android:attr/textAppearance"
                 android:textColor="#000" />
 
@@ -69,21 +69,23 @@
                 android:id="@+id/textView7"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="ProShirt Inc"
+                android:text="ProShirt d.o.o."
                 android:textAppearance="?android:attr/textAppearance"
                 android:textColor="#000" />
+
             <TextView
                 android:id="@+id/tvEmbroidery"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Chemnitzer Strasse 48"
+                android:text="Mlinska 22"
                 android:textAppearance="?android:attr/textAppearance"
                 android:textColor="#000" />
+
             <TextView
                 android:id="@+id/tvSendFromCity"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="01187 Dresden"
+                android:text="2000 Maribor"
                 android:textAppearance="?android:attr/textAppearance"
                 android:textColor="#000" />
 
