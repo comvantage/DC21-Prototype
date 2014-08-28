@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center" 
+        android:background="@drawable/griditem_background"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp">
+
+        <ImageView
+            android:id="@+id/imgDisplayed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="1dp"
+            android:src="@drawable/add_design" />        
+    </FrameLayout>
+    
+    <RelativeLayout
+		android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:layout_margin="9dp"
+        android:padding="8dp">
+	
+       		<TextView
+       		    android:id="@+id/txtNazivgrd2"
+       		    style="@style/ultramalaPisava"
+       		    android:paddingTop="5dp"
+       		    android:gravity="center_horizontal"
+       		    android:layout_width="fill_parent"
+       		    android:layout_height="wrap_content"
+       		    android:text="@string/grid2" />
+        
+        	<ImageView
+        	    android:id="@+id/imgButtongrd2"
+        	    android:layout_width="match_parent"
+        	    android:layout_height="wrap_content"
+        	    android:layout_below="@+id/txtNazivgrd2"
+        	    android:clickable="true"
+        	    android:gravity="center"
+        	    android:paddingBottom="5dp"
+        	    android:paddingTop="17dp"
+        	    android:src="@drawable/imageselector_submit_idea" />
+
+    </RelativeLayout>
+    
+    
+</LinearLayout>

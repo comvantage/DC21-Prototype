@@ -1,0 +1,322 @@
+<LinearLayout xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E4E4E4"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.challenges_ideas.MainActivity"
+    tools:ignore="MergeRootFrame" xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--<ViewFlipper
+        android:id="@+id/viewFlipper1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+-->
+        <LinearLayout
+            android:id="@+id/view_1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" >
+
+            <ImageButton
+                android:id="@+id/imageButton1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:src="@drawable/flip_left" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical" >
+
+                <TextView 
+                    android:id="@+id/tekst"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Moving white lines"
+                    style="@style/srednjaPisava"
+                    />
+                
+                <ImageView
+                    android:id="@+id/imgShirt1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="190sp"
+                    android:layout_marginTop="30sp"
+                    android:layout_below="@id/tekst"
+                    android:src="@drawable/shirts2" />
+
+                <ImageView
+                    android:id="@+id/imgFullScreen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/imgShirt1"
+                    android:layout_toRightOf="@id/imgShirt1"
+                    android:paddingBottom="50sp"
+                    android:paddingLeft="50sp"
+                    android:src="@drawable/full_screen" />
+
+                <ImageView
+                    android:id="@+id/imgZoom"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@id/imgFullScreen"
+                    android:layout_toRightOf="@id/imgShirt1"
+                    android:paddingLeft="50sp"
+                    android:src="@drawable/zoom" />
+                
+
+                <TabWidget 
+                    android:id="@+id/tabs"
+                    android:layout_marginTop="30sp"
+                    android:layout_width="800sp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/imgShirt1">
+                    
+                    
+    				<RelativeLayout 
+    				    android:orientation="vertical"
+        				android:layout_width="fill_parent" android:layout_height="fill_parent"
+        				android:gravity="bottom">                    
+                    
+                    <LinearLayout 
+                        android:id="@+id/tabbar"
+                        android:orientation="horizontal"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content">
+                        
+                        <ImageView
+					          android:id="@+id/btnMarliesDesign"
+					          android:layout_width="wrap_content"
+					          android:layout_height="wrap_content"
+					          android:layout_gravity="center"
+					          android:clickable="true"
+					          android:paddingRight="5dp"
+					          android:src="@drawable/imageselector_marliesdesign" />
+
+                        <ImageView
+					          android:id="@+id/btnSimilarIdeas"
+					          android:layout_width="wrap_content"
+					          android:layout_height="wrap_content"
+					          android:layout_gravity="center"
+					          android:clickable="true"
+					          android:paddingRight="5dp"					          
+					          android:src="@drawable/imageselector_similarideas" />
+                                                                        
+                    </LinearLayout>
+                    
+                    <FrameLayout
+                        android:id="@+id/tabcontent"
+                        android:layout_height="fill_parent"
+                        android:layout_width="fill_parent"
+                        android:padding="5sp"
+                        android:layout_below="@id/tabbar"                        
+                        android:background="@drawable/listitem_background">
+                        
+                    <LinearLayout 
+                        android:id="@+id/contentbar"
+                        android:orientation="horizontal"
+                        android:layout_width="fill_parent"
+                        android:layout_gravity="bottom"
+                        android:layout_height="wrap_content">
+					
+                        <ImageView
+					          android:id="@+id/pic1"
+					          android:layout_width="wrap_content"
+					          android:layout_height="wrap_content"
+					          android:layout_gravity="center"
+					          android:clickable="false"
+					          android:paddingRight="5dp"
+					          android:src="@drawable/ffwd_lines" />
+                        
+                        <ImageView
+					          android:id="@+id/pic2"
+					          android:layout_width="wrap_content"
+					          android:layout_height="wrap_content"
+					          android:layout_gravity="center"
+					          android:clickable="false"
+					          android:paddingRight="5dp"
+					          android:src="@drawable/growing_waves" />
+                        
+                    
+                    </LinearLayout>
+                        
+                    </FrameLayout>
+                    
+                    </RelativeLayout>
+                                        
+                </TabWidget>
+            </RelativeLayout>
+            
+            <RelativeLayout
+                android:layout_width="370sp"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="30sp"
+                android:padding="25sp"
+                android:background="#FFFFFF">
+                
+                <TextView 
+                    android:id="@+id/txtTitleDesc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Moving white lines"
+                    style="@style/velikaPisava.bold"
+                    />                
+                
+                 <TextView
+                     android:id="@+id/txtFromDesc"
+                     style="@style/ultramalaPisava"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_below="@id/txtTitleDesc"
+                     android:text="from Peter Novak, 05.10.2014" />
+                
+				<ImageView
+	        	    android:id="@+id/imageView3"
+	        	    android:layout_width="wrap_content"
+	        	    android:layout_height="wrap_content"
+	        	    android:layout_below="@id/txtFromDesc"
+	        	    android:layout_marginTop="10sp"
+	        	    android:src="@drawable/oka" />        	    
+	        	
+	       		<TextView
+	       		    android:id="@+id/txtSeeCount"
+	       		    style="@style/malaPisava"
+	       		    android:layout_width="wrap_content"
+	       		    android:layout_height="wrap_content"
+	       		    android:layout_alignTop="@id/imageView3"
+	       		    android:layout_below="@id/txtFromDesc"
+	       		    android:layout_toRightOf="@id/imageView3"
+	       		    android:paddingLeft="10dp"
+	       		    android:text="1" />
+				
+	        	<ImageView
+	        	    android:id="@+id/imageView4"
+	        	    android:layout_width="wrap_content"
+	        	    android:layout_height="wrap_content"
+	        	    android:src="@drawable/thumbsup" 
+					android:paddingLeft="32dp"  
+	        	    android:layout_marginTop="10sp"					
+					android:layout_below="@id/txtFromDesc"
+					android:layout_toRightOf="@id/txtSeeCount"/>     
+	        	    
+	       		<TextView
+	       		    android:id="@+id/txtThumbsCount"
+	       		    style="@style/malaPisava"
+	       		    android:layout_width="wrap_content"
+	       		    android:layout_height="wrap_content"
+	       		    android:layout_alignTop="@id/imageView4"
+	       		    android:layout_below="@id/txtSeeCount"
+	       		    android:layout_toRightOf="@id/imageView4"
+	       		    android:paddingLeft="10dp"
+	       		    android:text="0" />
+	        	
+	        	<ImageView
+	        	    android:id="@+id/imageView5"
+	        	    android:layout_width="wrap_content"
+	        	    android:layout_height="wrap_content"
+	        	    android:src="@drawable/comment"
+	        	    android:layout_marginTop="10sp"
+					android:paddingLeft="32dp"
+	        	    android:layout_below="@id/txtFromDesc"
+	        	    android:layout_toRightOf="@id/txtThumbsCount"/>             	
+
+	       		<TextView
+	       		    android:id="@+id/txtCommentCount"
+	       		    style="@style/malaPisava"
+	       		    android:layout_width="wrap_content"
+	       		    android:layout_height="wrap_content"
+	       		    android:layout_alignTop="@id/imageView5"
+	       		    android:layout_below="@id/txtThumbsCount"
+	       		    android:layout_toRightOf="@id/imageView5"
+	       		    android:paddingLeft="10dp"
+	       		    android:text="0" />
+                 
+	       		<TextView
+	       		    android:id="@+id/lblDesc"
+	       		    style="@style/malaPisava.bold"
+	       		    android:layout_width="wrap_content"
+	       		    android:layout_height="wrap_content"
+	       		    android:layout_below="@id/txtFromDesc"
+	       		    android:layout_marginTop="60dp"
+	       		    android:text="Description:" />     	       		
+	       		
+	       		<TextView
+	       		    android:id="@+id/txtDesc"
+	       		    style="@style/malaPisava"
+	       		    android:layout_width="wrap_content"
+	       		    android:layout_height="wrap_content"
+	       		    android:layout_below="@id/lblDesc"
+	       		    android:text="@string/description" />     	                 
+	       		
+	       		<TextView
+	       		    android:id="@+id/lblAbout"
+	       		    style="@style/malaPisava.bold"
+	       		    android:layout_width="wrap_content"
+	       		    android:layout_height="wrap_content"
+	       		    android:layout_below="@id/txtDesc"
+	       		    android:layout_marginTop="30dp"
+	       		    android:text="About Peter Novak:" />   	       		
+	       		
+	       		<TextView
+	       		    android:id="@+id/lblIdeas"
+	       		    style="@style/malaPisava.italic"
+	       		    android:layout_width="wrap_content"
+	       		    android:layout_height="wrap_content"
+	       		    android:layout_below="@id/lblAbout"
+	       		    android:layout_marginTop="5dp"
+	       		    android:text="Ideas" />
+	       		
+	       		<TextView
+	       		    android:id="@+id/txtIdeas"
+	       		    style="@style/malaPisava"
+	       		    android:layout_width="wrap_content"
+	       		    android:layout_height="wrap_content"
+	       		    android:layout_toRightOf="@id/lblIdeas"
+	       		    android:text="3 shirt designs"
+	       		    android:paddingLeft="10sp"
+	       		    android:layout_alignBaseline="@id/lblIdeas" />  	       		
+	       		
+            <ImageButton
+                android:id="@+id/btnVoteUp"
+                android:layout_width="wrap_content"                
+                android:layout_height="wrap_content"
+                android:src="@drawable/imageselector_vote_up"
+                android:layout_below="@id/lblIdeas"
+				android:layout_centerHorizontal="true"
+                android:layout_marginTop="50sp"
+                android:background="@null" />	       		
+	       		
+	       <Button
+	           android:id="@+id/btnClose"
+	           android:layout_width="wrap_content"
+	           android:layout_height="wrap_content"
+	           android:layout_below="@id/btnVoteUp"
+	           android:layout_centerHorizontal="true"
+	           android:layout_marginTop="50sp"
+	           android:background="#000"
+	           android:text="Close"
+	           android:textColor="#fff"
+	           android:textStyle="bold" />
+	       			       		
+            </RelativeLayout>
+            
+            <ImageButton
+                android:id="@+id/imageButton2"
+                android:layout_width="wrap_content" 
+                android:layout_marginLeft="10sp"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:src="@drawable/flip_right" />
+            
+        </LinearLayout>
+    
+    <!--
+    </ViewFlipper>
+	-->
+</LinearLayout>

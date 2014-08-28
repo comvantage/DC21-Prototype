@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center" 
+        android:background="@drawable/griditem_background"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp">
+
+        <ImageView
+            android:id="@+id/imgDisplayed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="1dp"
+            android:src="@drawable/add_design" />        
+    </FrameLayout>
+    
+    <RelativeLayout
+		android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:layout_margin="9dp"
+        android:padding="8dp">
+	
+       		<TextView
+       		    android:id="@+id/txtNaziv"
+       		    style="@style/srednjaPisava.bold.orange"
+       		    android:layout_width="290dp"
+       		    android:layout_height="wrap_content"
+       		    android:text="Moving white lines" />
+        
+        	<TextView
+        	    android:id="@+id/txtFrom"
+        	    style="@style/ultramalaPisava"
+        	    android:layout_width="290dp"
+        	    android:layout_height="wrap_content"
+        	    android:layout_below="@id/txtNaziv"
+        	    android:paddingTop="3dp"
+        	    android:text="from Marlies Narat, 23.11.2012" />
+
+        	<ImageView
+        	    android:id="@+id/imgButton"
+        	    android:layout_width="wrap_content"
+        	    android:layout_height="wrap_content"
+        	    android:layout_below="@+id/txtFrom"
+        	    android:clickable="true"
+        	    android:paddingTop="8dp"
+        	    android:src="@drawable/vote_up" />
+
+        	<RelativeLayout
+        	    android:layout_width="wrap_content"
+        	    android:layout_height="wrap_content"
+        	    android:layout_toRightOf="@id/txtNaziv"
+        	    android:paddingTop="3dp"
+        	    android:layout_alignTop="@id/txtFrom">        	
+
+	        	<ImageView
+	        	    android:id="@+id/imageView3"
+	        	    android:layout_width="wrap_content"
+	        	    android:layout_height="wrap_content"
+					android:paddingLeft="12dp"
+	        	    android:src="@drawable/oka" />        	    
+	        	
+	        	<ImageView
+	        	    android:id="@+id/imageView4"
+	        	    android:layout_width="wrap_content"
+	        	    android:layout_height="wrap_content"
+	        	    android:src="@drawable/thumbsup" 
+					android:paddingLeft="12dp"        		
+	        		android:paddingTop="6dp"
+	        	    android:layout_below="@id/imageView3"/>     
+	        	    
+	        	<ImageView
+	        	    android:id="@+id/imageView5"
+	        	    android:layout_width="wrap_content"
+	        	    android:layout_height="wrap_content"
+	        	    android:src="@drawable/comment" 
+					android:paddingLeft="12dp"
+	        		android:paddingTop="6dp"
+	        	    android:layout_below="@id/imageView4"/>             	
+	        		
+			   <ImageView
+		            android:id="@+id/delimiter"
+		            android:layout_width="wrap_content"
+		            android:layout_height="65dp"
+		            android:padding="1dp"
+		            android:src="@drawable/delimiter" />	
+	        	
+	       		<TextView
+	       		    android:id="@+id/txtSeeCount"
+	       		    style="@style/malaPisava"
+	       		    android:layout_width="wrap_content"
+	       		    android:layout_height="wrap_content"
+	       		    android:layout_alignTop="@id/imageView3"
+	       		    android:layout_toRightOf="@id/imageView3"
+	       		    android:paddingLeft="10dp"
+	       		    android:text="21" />
+	       		
+	       		<TextView
+	       		    android:id="@+id/txtThumbsCount"
+	       		    style="@style/malaPisava"
+	       		    android:layout_width="wrap_content"
+	       		    android:layout_height="wrap_content"
+	       		    android:text="6" 
+	       		    android:paddingTop="6dp"
+	       		    android:paddingLeft="10dp"       		    
+	       		    android:layout_toRightOf="@id/imageView4"
+	       		    android:layout_below ="@id/txtSeeCount"
+	       		    android:layout_alignTop="@id/imageView4"/>
+	      		
+	       		<TextView
+	       		    android:id="@+id/txtCommentCount"
+	       		    style="@style/malaPisava"
+	       		    android:layout_width="wrap_content"
+	       		    android:layout_height="wrap_content"
+	       		    android:layout_alignTop="@id/imageView5"
+	       		    android:layout_below="@id/txtThumbsCount"
+	       		    android:layout_toRightOf="@id/imageView5"
+	       		    android:paddingLeft="10dp"
+	       		    android:paddingTop="5dp"
+	       		    android:text="5" />
+	       	
+	        </RelativeLayout>
+        
+    </RelativeLayout>
+    
+    
+</LinearLayout>

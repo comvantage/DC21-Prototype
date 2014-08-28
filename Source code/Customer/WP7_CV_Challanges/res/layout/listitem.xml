@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/listitem_background"
+    android:orientation="horizontal">
+
+	    <ImageView
+	        android:id="@+id/imageView1"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:src="@drawable/seznam_slika"
+	        android:padding="8sp" />
+
+	    <RelativeLayout
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:paddingTop="5sp" >
+		    
+		    <TextView
+		        android:id="@+id/txtNaziv"
+		        android:layout_width="400sp"
+		        android:layout_height="wrap_content"
+		        android:text="Naziv"
+		        style="@style/srednjaPisava.bold.orange" />	        
+	        
+	        
+		    <TextView
+		        android:id="@+id/lblChallenge"
+		        style="@style/ultramalaPisava.italic"
+		        android:layout_width="70dp"
+		        android:layout_height="wrap_content"
+		        android:layout_below="@id/txtNaziv"
+		        android:paddingTop="3dp"
+		        android:text="Challenge" />
+        
+        	<TextView
+		        android:id="@+id/txtChallenge"
+		        style="@style/ultramalaPisava"
+		        android:layout_width="650dp"
+		        android:layout_height="wrap_content"
+		        android:layout_toRightOf="@id/lblChallenge"
+		        android:layout_alignBaseline="@id/lblChallenge"
+		        android:text="Design the ultimate Dresscode21 Shirt with our designing tool. It should look linear, dynamic and young." />
+		    
+		    
+		    <TextView
+		        android:id="@+id/lblPrize"
+		        android:layout_height="wrap_content"
+		        android:layout_width="70sp"
+		        android:text="Prize"
+		        android:layout_below="@id/lblChallenge"
+		        style="@style/ultramalaPisava.italic" />	        	        
+
+        	<TextView
+		        android:id="@+id/txtPrize"
+		        style="@style/ultramalaPisava"
+		        android:layout_width="650sp"
+		        android:layout_height="wrap_content"
+		        android:layout_toRightOf="@id/lblPrize"
+		        android:layout_alignBaseline="@id/lblPrize"
+		        android:text="Win your own collection and 2 shirts" />
+		    		    
+		    
+		    <TextView
+		        android:id="@+id/lblDuration"
+		        android:layout_width="70sp"
+		        android:layout_height="wrap_content"
+		        android:layout_below="@id/lblPrize"
+		        android:text="Duration"
+		        style="@style/ultramalaPisava.italic" />	        	        
+
+	       	<TextView
+	       	    android:id="@+id/txtDurDate"
+	       	    style="@style/ultramalaPisava"
+	       	    android:layout_width="650sp"
+	       	    android:layout_height="wrap_content"
+	       	    android:layout_alignBaseline="@id/lblDuration"
+	       	    android:layout_toRightOf="@id/lblDuration"
+	       	    android:paddingBottom="8sp"
+	       	    android:text="30.8.2014 - 30.1.2015, 12pm" />
+
+	    </RelativeLayout>
+	    
+	    
+	    <ImageView
+	        android:id="@+id/imgDelimiter"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:src="@drawable/delimiter"
+	        android:paddingTop="8sp" 
+	        android:paddingBottom="8sp"
+	        android:paddingRight="13sp"
+	        />  
+	        
+	    <RelativeLayout
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:paddingTop="8sp"
+	        android:paddingRight="8sp" >	    
+
+	        	        	        
+		    <TextView
+		        android:id="@+id/txtDuration"
+		        style="@style/ultramalaPisava.bolditalic"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"		        
+		        android:text="Finished" 
+		        android:layout_centerHorizontal="true"/>
+
+	    	<ImageView
+	    	    android:id="@+id/imgButton"
+	    	    android:layout_width="wrap_content"
+	    	    android:layout_height="wrap_content"
+	    	    android:layout_below="@id/txtDuration"
+	    	    android:clickable="true"
+	    	    android:focusable="true"
+	    	    android:paddingTop="3sp"
+	    	    android:src="@drawable/view_winner" />
+		    	        
+	     </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,216 @@
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix o: <http://comvantage.eu/ontologies/iaf/2013/0/Orchestration.owl#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+# Generate random String for GenericApp URIs
+# < /dev/urandom tr -dc A-Z-a-z-0-9 | head -c${1:-12};echo;
+
+o:DC21_Producer_Dashboard
+	a			o:GenericApp;
+	rdfs:label 		"DC21 Producer Dashboard"; 
+	o:filename		"CW7_IAF_Dashboard.apk";
+	o:descriptionFilename	"CW7_IAF_Dashboard.ttl".
+	
+o:DC21_Producer_Orders
+	a			o:GenericApp;
+	rdfs:label 		"DC21 Producer Orders"; 
+	o:filename		"CW7_IAF_List_Of_Orders.apk";
+	o:descriptionFilename	"CW7_IAF_List_Of_Orders.ttl".
+	
+o:DC21_Producer_Order_Details
+	a			o:GenericApp;
+	rdfs:label 		"DC21 Producer Order Details"; 
+	o:filename		"CW7_IAF_Orders.apk";
+	o:descriptionFilename	"CW7_IAF_Orders.ttl".
+	
+o:DC21_Producer_Stock_Managment
+	a			o:GenericApp;
+	rdfs:label 		"DC21 Producer Stock Managment"; 
+	o:filename		"CW7_IAF_Stock_Managment.apk";
+	o:descriptionFilename	"CW7_IAF_Stock_Managment.ttl".
+
+o:DC21_Producer_DC21_Login
+	a			o:GenericApp;
+	rdfs:label 		"DC21 Producer Login"; 
+	o:filename		"CW7_IAF_Login.apk";
+	o:descriptionFilename	"CW7_IAF_Login.ttl".
+	
+o:DC21_Producer_KPI
+	a			o:GenericApp;
+	rdfs:label 		"DC21 Producer KPI"; 
+	o:filename		"KPI.apk";
+	o:descriptionFilename	"KPI.ttl".
+
+o:DC21_Shop_Login
+	a			o:GenericApp;
+	rdfs:label 		"DC21 Shop Login"; 
+	o:filename		"WP7_CV_Login.apk";
+	o:descriptionFilename	"WP7_CV_Login.ttl".
+	
+o:DC21_Shop_Dashboard
+	a			o:GenericApp;
+	rdfs:label 		"DC21 Shop Dashboard"; 
+	o:filename		"WP7_CV_Dashboard.apk";
+	o:descriptionFilename	"WP7_CV_Dashboard.ttl".
+	
+o:DC21_Shop_News
+	a			o:GenericApp;
+	rdfs:label 		"DC21 Shop News"; 
+	o:filename		"WP7_CV_News.apk";
+	o:descriptionFilename	"WP7_CV_News.ttl".
+	
+o:DC21_Shop_Products
+	a			o:GenericApp;
+	rdfs:label 		"DC21 Shop Products"; 
+	o:filename		"WP7_CV_Products.apk";
+	o:descriptionFilename	"WP7_CV_Products.ttl".
+	
+o:DC21_Shop_Challanges
+	a			o:GenericApp;
+	rdfs:label 		"DC21 Shop Challanges"; 
+	o:filename		"WP7_CV_Challanges.apk";
+	o:descriptionFilename	"WP7_CV_Challanges.ttl".
+
+o:DC21_Shop_Challanges_Ideas
+	a			o:GenericApp;
+	rdfs:label 		"DC21 Shop Challanges Ideas"; 
+	o:filename		"WP7_CV_Challenges_Ideas.apk";
+	o:descriptionFilename	"WP7_CV_Challenges_Ideas.ttl".
+	
+o:DC21_Shop_Challanges_Idea_Detail
+	a			o:GenericApp;
+	rdfs:label 		"DC21 Shop Challanges Idea Detail"; 
+	o:filename		"WP7_CV_Challenge_Idea_Detail.apk";
+	o:descriptionFilename	"WP7_CV_Challenge_Idea_Detail.ttl".
+	
+o:DC21_Shop_Challanges_Participate
+	a			o:GenericApp;
+	rdfs:label 		"DC21 Shop Challanges Participate"; 
+	o:filename		"WP7_CV_Challenge_Participate.apk";
+	o:descriptionFilename	"WP7_CV_Challenge_Participate.ttl".
+
+o:DC21_Shop_Shirt_Detail
+	a			o:GenericApp;
+	rdfs:label 		"DC21 Shop Shirt Detail"; 
+	o:filename		"WP7_CV_Standard_Shirt.apk";
+	o:descriptionFilename	"WP7_CV_Standard_Shirt.ttl".
+	
+o:DC21_Shop_Recommendation
+	a			o:GenericApp;
+	rdfs:label 		"DC21 Shop Recommendation"; 
+	o:filename		"WP7_CV_Recommendation.apk";
+	o:descriptionFilename	"WP7_CV_Recommendation.ttl".
+	
+o:DC21_Shop_Embroidery
+	a			o:GenericApp;
+	rdfs:label 		"DC21 Shop Embroidery"; 
+	o:filename		"WP7_CV_Embroidery.apk";
+	o:descriptionFilename	"WP7_CV_Embroidery.ttl".
+	
+o:DC21_Shop_Price_Delivery
+	a			o:GenericApp;
+	rdfs:label 		"DC21 Shop Price Delivery"; 
+	o:filename		"WP7_CV_Price_and_Delivery.apk";
+	o:descriptionFilename	"WP7_CV_Price_and_Delivery.ttl".
+	
+o:DC21_Shop_Shopping_Cart
+	a			o:GenericApp;
+	rdfs:label 		"DC21 Shop Shopping Cart"; 
+	o:filename		"WP7_CV_Shopping_Cart.apk";
+	o:descriptionFilename	"WP7_CV_Shopping_Cart.ttl".
+	
+o:DC21_Shop_Individual_Shirt
+	a			o:GenericApp;
+	rdfs:label 		"DC21 Shop Individual Shirt Design"; 
+	o:filename		"WP7_CV_Individual_Shirt_Design.apk";
+	o:descriptionFilename	"WP7_CV_Individual_Shirt_Design.ttl".
+	
+
+#### Predefined
+
+o:SkeletonApp_G0M8iQlfoOQQ	
+	a			o:GenericApp;
+	rdfs:label 		"Skeleton App"; 
+	o:filename		"IAFSkeletonApp.apk";
+	o:descriptionFilename	"IAFSkeletonApp.ttl".
+
+o:OIFileManager_uNSUZ7-rb3mm
+	a			o:GenericApp;
+	rdfs:label		"OI File Manager";
+	o:filename		"OIFileManager-2.0.2.apk";
+	o:descriptionFilename	"OIFileManager-2.0.2.ttl".
+
+o:IAFManagementComponent_ZIRiErVxZHc-
+	a			o:GenericApp;
+	rdfs:label		"IAF Management Component";
+	o:filename		"IAFManagementComponent.apk";
+	o:descriptionFilename	"IAFManagementComponent.ttl".
+
+o:IAFLogin_Zvy4kvB-fH9T
+	a			o:GenericApp;
+	rdfs:label 		"ComVantage Login App";
+	o:filename		"IAFLogin.apk";
+	o:descriptionFilename	"IAFLogin.ttl".
+
+o:TUDSimpleList_NryuJDGzjNXl
+	a			o:GenericApp;
+	rdfs:label 		"TUD Simple List App";
+	o:filename		"TUDSimpleList.apk";
+	o:descriptionFilename	"TUDSimpleList.ttl".
+
+o:TUDSimpleMessage_MBrh2UmSe3AP
+	a			o:GenericApp;
+	rdfs:label 		"TUD Simple Message App";
+	o:filename		"TUDSimpleMessage.apk";
+	o:descriptionFilename	"TUDSimpleMessage.ttl".
+
+o:BaracodaManager-9sfLOr
+	a			o:GenericApp;
+	rdfs:label 		"Baracoda Manager";
+	o:filename		"BaracodaManager-2.0.0.apk";
+	o:descriptionFilename	"BaracodaManager-2.0.0.ttl".
+
+o:TUDDeviceExplorer_2L0qAoIPyBI9
+	a			o:GenericApp;
+	rdfs:label 		"TUD Device Explorer";
+	o:filename		"TUDDeviceExplorer.apk";
+	o:descriptionFilename	"TUDDeviceExplorer.ttl".
+
+o:TUDLogService_O59iHmmOB0vv
+	a			o:GenericApp;
+	rdfs:label 		"TUD Log Service";
+	o:filename		"TUDLogService.apk";
+	o:descriptionFilename	"TUDLogService.ttl".
+
+o:TUDSensorSelection_bYVMOi4UGBde
+	a			o:GenericApp;
+	rdfs:label 		"TUD Sensor Selection";
+	o:filename		"TUDSensorSelection.apk";
+	o:descriptionFilename	"TUDSensorSelection.ttl".
+
+o:TUDSparqlTest_Vo398bbvljR0
+	a			o:GenericApp;
+	rdfs:label 		"TUD SPARQL Test";
+	o:filename		"TUDSparqlTest.apk";
+	o:descriptionFilename	"TUDSparqlTest.ttl".
+
+o:SilkTester
+	a			o:GenericApp;
+	rdfs:label 		"Visualize Test Results";
+	o:filename		"TUDSparqlTest.apk";
+	o:descriptionFilename	"TUDSparqlTest.ttl".
+	
+o:SAPTimeSeriesViewer_a4r8tzUD2rJ8
+	a			o:GenericApp;
+	rdfs:label 		"SAP Time Series Viewer";
+	o:filename		"SAPTimeSeriesViewer.apk";
+	o:descriptionFilename	"SAPTimeSeriesViewer.ttl".
+	
+o:SAPTimeSeriesAnalyzer_5toD9fG7R23e
+	a			o:GenericApp;
+	rdfs:label 		"SAP Time Series Analyzer";
+	o:filename		"SAPTimeSeriesAnalyzer.apk";
+	o:descriptionFilename	"SAPTimeSeriesAnalyzer.ttl".

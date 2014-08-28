@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Challenges ideas</string>
+    <string name="action_settings">Nastavitve</string>
+	<string name="str_filter">Filter</string>
+	<string name="str_vozicek">0</string>
+	<string name="tab1">Home</string>
+	<string name="tab2">Shop</string>
+	<string name="tab3">News</string>
+	<string name="shirtselection">We like to offer shirt designs which are liked by the community. Therefore we asko you to enter your ideas for our new collection. The most voted shirts will be discussed in our jury consisting of Sissi Jarz (Marketing, Dresscode21), Manfred Maurer (fashion salesman, Kastner), Gundula Medwed (Style advisor, Medwed), Sanja Velickovic (fashion designer, SanjaV) and Daniel Simmons (fashion designer, Modewerkstatt). Finally one design will be chosen and printed on shirts.</string>
+	<string name="designrestrictions">The motive has to be unisex, min. line size is 1pt, one colour, motive not bigger than 40 X 65 cm, only for the front of the shirt. It should be dynamic, young and linear. Don\'t worry - it doesn\'t have to be perfectly designed yet. It\'s about the idea!</string>
+	<string name="grid2">Any ideas for a shirt design? Then join the challenge now and win your own shirt collection!</string>
+		
+ <string name="any_text">
+ <![CDATA[ <b><font color=#ff0000>write</b> your <b><font color=#0000ff>text</b> here .
+
+]]> 
+  </string>
+</resources>

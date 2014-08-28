@@ -1,0 +1,36 @@
+#################################################
+#
+# This file provides some additional context for the BPM
+#
+#################################################
+
+@prefix o: <http://comvantage.eu/ontologies/iaf/2013/0/Orchestration.owl#> .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+# Connect apps in the orchestration model with real apps
+# For each of the "Mobile_IT_support_feature" nodes that are found in your model you can manually
+# assign an app from the app pool here. You can copy this file and add your own entries.
+# Later this mechanism will be replaced by a semi-automated app selection.
+
+<http://www.comvantage.eu/dc21#Mobile_IT_support_feature_G-512051-Order_details_and_processing>
+    o:instanceOf	o:DC21_Producer_Order_Details .
+  
+<http://www.comvantage.eu/dc21#Mobile_IT_support_feature_G-512048-Order_list>
+    o:instanceOf	o:DC21_Producer_Orders .
+  
+<http://www.comvantage.eu/dc21#Mobile_IT_support_feature_G-512054-Dashboard>
+    o:instanceOf	o:DC21_Producer_Dashboard .
+  
+<http://www.comvantage.eu/dc21#Mobile_IT_support_feature_G-512045-Stock_list>
+  o:instanceOf	o:DC21_Producer_Stock_Managment .
+  
+<http://www.comvantage.eu/dc21#Mobile_IT_support_feature_G-512057-DC21_Login>
+  o:instanceOf	o:DC21_Producer_DC21_Login .
+  
+<http://www.comvantage.eu/dc21#Mobile_IT_support_feature_G-512060-KPI>
+  o:instanceOf	o:DC21_Producer_KPI .

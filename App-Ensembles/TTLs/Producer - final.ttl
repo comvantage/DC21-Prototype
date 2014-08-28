@@ -1,0 +1,94 @@
+@prefix o: <http://comvantage.eu/ontologies/iaf/2013/0/Orchestration.owl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://www.comvantage.eu/dc21#Mobile_IT_support_feature_G-512045-Stock_list> a o:App,
+        <http://www.comvantage.eu/mm#Mobile_IT_support_feature_G> ;
+    o:Name "Stock list" ;
+    o:hasSuccessionType o:OR ;
+    o:instanceOf o:DC21_Producer_Stock_Managment .
+
+<http://www.comvantage.eu/dc21#Mobile_IT_support_feature_G-512048-Order_list> a o:App,
+        <http://www.comvantage.eu/mm#Mobile_IT_support_feature_G> ;
+    o:Name "Order list" ;
+    o:hasSuccessionType o:OR ;
+    o:instanceOf o:DC21_Producer_Orders .
+
+<http://www.comvantage.eu/dc21#Mobile_IT_support_feature_G-512051-Order_details_and_processing> a o:App,
+        <http://www.comvantage.eu/mm#Mobile_IT_support_feature_G> ;
+    o:Name "Order details and processing" ;
+    o:hasSuccessionType o:OR ;
+    o:instanceOf o:DC21_Producer_Order_Details .
+
+<http://www.comvantage.eu/dc21#Mobile_IT_support_feature_G-512054-Dashboard> a o:App,
+        <http://www.comvantage.eu/mm#Mobile_IT_support_feature_G> ;
+    o:Name "Dashboard" ;
+    o:hasSuccessionType o:OR ;
+    o:instanceOf o:DC21_Producer_Dashboard .
+
+<http://www.comvantage.eu/dc21#Mobile_IT_support_feature_G-512060-KPI> a o:App,
+        <http://www.comvantage.eu/mm#Mobile_IT_support_feature_G> ;
+    o:Name "KPI" ;
+    o:hasSuccessionType o:OR ;
+    o:instanceOf o:DC21_Producer_KPI .
+
+o:DC21_Producer_DC21_Login o:hasIntent [ o:intentPurpose "ShowLogin" ;
+            o:intentString "eu.comvantage.iaf.DC21_LOGIN" ] .
+
+o:DC21_Producer_Dashboard o:hasIntent [ o:intentPurpose "ShowDashboard" ;
+            o:intentString "eu.comvantage.iaf.DC21_DASH" ] .
+
+o:DC21_Producer_KPI o:hasIntent [ o:intentPurpose "KPI" ;
+            o:intentString "eu.comvantage.iaf.DC21_KPI" ] .
+
+o:DC21_Producer_Order_Details o:hasIntent [ o:intentPurpose "ShowOrderDetails" ;
+            o:intentString "eu.comvantage.iaf.DC21_ORDERDETAILS" ] .
+
+o:DC21_Producer_Orders o:hasIntent [ o:intentPurpose "ShowOrdersList" ;
+            o:intentString "eu.comvantage.iaf.DC21_ORDERS" ] .
+
+o:DC21_Producer_Stock_Managment o:hasIntent [ o:intentPurpose "ShowStockManagment" ;
+            o:intentString "eu.comvantage.iaf.DC21_STOCK" ] .
+
+o:IAFLogin_Zvy4kvB-fH9T o:hasIntent [ o:intentPurpose "Login" ;
+            o:intentString "eu.comvantage.iaf.LOGIN" ],
+        [ o:intentPurpose "Logout" ;
+            o:intentString "eu.comvantage.iaf.LOGOUT" ] ;
+    o:requiresApp o:OIFileManager_uNSUZ7-rb3mm .
+
+o:IAFManagementComponent_ZIRiErVxZHc- a o:ManagementApp ;
+    o:hasIntent [ o:intentPurpose "StartWorkflow" ;
+            o:intentString "eu.comvantage.iaf.START_WORKFLOW" ] ;
+    o:requiresApp o:OIFilEManager_uNSUZ7-rb3mm .
+
+o:OIFileManager_uNSUZ7-rb3mm a o:ExternalApp ;
+    o:hasIntent [ o:intentPurpose "OpenFile" ;
+            o:intentString "eu.comvantage.iaf.START_WORKFLOW" ] .
+
+o:TUDSimpleList_NryuJDGzjNXl o:hasIntent [ o:intentPurpose "ShowSimpleList" ;
+            o:intentString "eu.comvantage.iaf.SIMPLE_LIST" ],
+        [ o:intentPurpose "ShowDecision" ;
+            o:intentString "eu.comvantage.iaf.DECISION" ] .
+
+o:TUDSimpleMessage_MBrh2UmSe3AP o:hasIntent [ o:intentPurpose "ShowSimpleMessage" ;
+            o:intentString "eu.comvantage.iaf.SIMPLE_MESSAGE" ] .
+
+<http://www.comvantage.eu/dc21#Mobile_IT_support_feature_G-512057-DC21_Login> a o:App,
+        <http://www.comvantage.eu/mm#Mobile_IT_support_feature_G> ;
+    o:Name "DC21 Login" ;
+    o:hasSuccessionType o:OR ;
+    o:instanceOf o:DC21_Producer_DC21_Login .
+
+[] a o:Orchestration ;
+    o:hasAppEnsemble [ a o:AppEnsemble ;
+            o:Name "AE_2014-7-14_14h51m57s" ;
+            o:hasDefaultIntent "eu.comvantage.iaf.SIMPLE_MESSAGE" ;
+            o:hasEntryPoint <http://www.comvantage.eu/dc21#Mobile_IT_support_feature_G-512057-DC21_Login> ;
+            o:requiresApp o:IAFLogin_Zvy4kvB-fH9T,
+                o:IAFManagementComponent_ZIRiErVxZHc-,
+                o:TUDSimpleList_NryuJDGzjNXl,
+                o:TUDSimpleMessage_MBrh2UmSe3AP ] .
+

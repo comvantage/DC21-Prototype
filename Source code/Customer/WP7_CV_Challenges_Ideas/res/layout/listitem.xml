@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+	    <ImageView
+	        android:id="@+id/imageView1"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:src="@drawable/seznam_slika"
+	        android:padding="8sp" />
+
+	    <RelativeLayout
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:paddingTop="5sp" >
+		    
+		    <TextView
+		        android:id="@+id/txtNaziv"
+		        android:layout_width="500sp"
+		        android:layout_height="wrap_content"
+		        android:text="4th Dresscode21 Shirt Design Contest"
+		        style="@style/srednjaPisava.bold.orange" />	        
+	        
+	        
+		    <TextView
+		        android:id="@+id/lblChallenge"
+		        style="@style/ultramalaPisava.italic"
+		        android:layout_width="43sp"
+		        android:layout_height="wrap_content"
+		        android:layout_below="@id/txtNaziv"
+		        android:paddingTop="3dp"
+		        android:text="Challenge" />
+        
+        	<TextView
+		        android:id="@+id/txtChallenge"
+		        style="@style/ultramalaPisava"
+		        android:layout_width="500sp"
+		        android:layout_height="wrap_content"
+		        android:layout_toRightOf="@id/lblChallenge"
+		        android:layout_alignBaseline="@id/lblChallenge"
+		        android:text="Design the ultimate Dresscode21 Shirt with our designing tool. It should look linear, dynamic and young." />
+		    
+		    
+		    <TextView
+		        android:id="@+id/lblPrize"
+		        android:layout_height="wrap_content"
+		        android:layout_width="43sp"
+		        android:text="Prize"
+		        android:layout_below="@id/lblChallenge"
+		        style="@style/ultramalaPisava.italic" />	        	        
+
+        	<TextView
+		        android:id="@+id/txtPrize"
+		        style="@style/ultramalaPisava"
+		        android:layout_width="500sp"
+		        android:layout_height="wrap_content"
+		        android:layout_toRightOf="@id/lblPrize"
+		        android:layout_alignBaseline="@id/lblPrize"
+		        android:text="Win your own collection and 2 shirts" />
+		    		    
+		    
+		    <TextView
+		        android:id="@+id/lblDuration"
+		        android:layout_width="43sp"
+		        android:layout_height="wrap_content"
+		        android:layout_below="@id/lblPrize"
+		        android:text="Duration"
+		        style="@style/ultramalaPisava.italic" />	        	        
+
+	       	<TextView
+		        android:id="@+id/txtPrize"
+		        style="@style/ultramalaPisava"
+		        android:layout_width="500sp"
+		        android:layout_height="wrap_content"
+		        android:layout_toRightOf="@id/lblDuration"
+		        android:layout_alignBaseline="@id/lblDuration"
+		        android:text="5.2.2012 - 5.6.2011, 12pm"
+	       		android:paddingBottom="8sp" />
+	    </RelativeLayout>
+	    
+	   
+</LinearLayout>

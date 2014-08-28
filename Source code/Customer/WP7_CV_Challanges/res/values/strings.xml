@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Challanges</string>
+    <string name="action_settings">Nastavitve</string>
+	<string name="str_filter">Filter</string>
+	<string name="str_vozicek">0</string>
+	<string name="tab1">Home</string>
+	<string name="tab2">Shop</string>
+	<string name="tab3">News</string>
+</resources>

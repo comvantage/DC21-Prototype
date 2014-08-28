@@ -1,0 +1,162 @@
+@prefix o: <http://comvantage.eu/ontologies/iaf/2013/0/Orchestration.owl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://www.comvantage.eu/dc21shop#Mobile_IT_support_feature_G-512214-DC21_Shop_Dashboard> a o:App,
+        <http://www.comvantage.eu/mm#Mobile_IT_support_feature_G> ;
+    o:Name "DC21 Shop Dashboard" ;
+    o:hasSuccessionType o:OR ;
+    o:instanceOf o:DC21_Shop_Dashboard .
+
+<http://www.comvantage.eu/dc21shop#Mobile_IT_support_feature_G-512217-News> a o:App,
+        <http://www.comvantage.eu/mm#Mobile_IT_support_feature_G> ;
+    o:Name "News" ;
+    o:hasSuccessionType o:OR ;
+    o:instanceOf o:DC21_Shop_News .
+
+<http://www.comvantage.eu/dc21shop#Mobile_IT_support_feature_G-512220-View_Shirts> a o:App,
+        <http://www.comvantage.eu/mm#Mobile_IT_support_feature_G> ;
+    o:Name "View Shirts" ;
+    o:hasSuccessionType o:OR ;
+    o:instanceOf o:DC21_Shop_Products .
+
+<http://www.comvantage.eu/dc21shop#Mobile_IT_support_feature_G-512223-Design_Contest> a o:App,
+        <http://www.comvantage.eu/mm#Mobile_IT_support_feature_G> ;
+    o:Name "Design Contest" ;
+    o:hasSuccessionType o:OR ;
+    o:instanceOf o:DC21_Shop_Challanges .
+
+<http://www.comvantage.eu/dc21shop#Mobile_IT_support_feature_G-512226-Recommendation> a o:App,
+        <http://www.comvantage.eu/mm#Mobile_IT_support_feature_G> ;
+    o:Name "Recommendation" ;
+    o:hasSuccessionType o:OR ;
+    o:instanceOf o:DC21_Shop_Recommendation .
+
+<http://www.comvantage.eu/dc21shop#Mobile_IT_support_feature_G-512229-Shirt_detail> a o:App,
+        <http://www.comvantage.eu/mm#Mobile_IT_support_feature_G> ;
+    o:Name "Shirt detail" ;
+    o:hasSuccessionType o:OR ;
+    o:instanceOf o:DC21_Shop_Shirt_Detail .
+
+<http://www.comvantage.eu/dc21shop#Mobile_IT_support_feature_G-512232-Embroidery> a o:App,
+        <http://www.comvantage.eu/mm#Mobile_IT_support_feature_G> ;
+    o:Name "Embroidery" ;
+    o:hasSuccessionType o:OR ;
+    o:instanceOf o:DC21_Shop_Embroidery .
+
+<http://www.comvantage.eu/dc21shop#Mobile_IT_support_feature_G-512235-Price_and_delivery> a o:App,
+        <http://www.comvantage.eu/mm#Mobile_IT_support_feature_G> ;
+    o:Name "Price and delivery" ;
+    o:hasSuccessionType o:OR ;
+    o:instanceOf o:DC21_Shop_Price_Delivery .
+
+<http://www.comvantage.eu/dc21shop#Mobile_IT_support_feature_G-512238-Shopping_cart> a o:App,
+        <http://www.comvantage.eu/mm#Mobile_IT_support_feature_G> ;
+    o:Name "Shopping cart" ;
+    o:hasSuccessionType o:OR ;
+    o:instanceOf o:DC21_Shop_Shopping_Cart .
+
+<http://www.comvantage.eu/dc21shop#Mobile_IT_support_feature_G-512241-Chalange_submit_idea> a o:App,
+        <http://www.comvantage.eu/mm#Mobile_IT_support_feature_G> ;
+    o:Name "Chalange submit idea" ;
+    o:hasSuccessionType o:OR ;
+    o:instanceOf o:DC21_Shop_Challanges_Participate .
+
+<http://www.comvantage.eu/dc21shop#Mobile_IT_support_feature_G-512244-Chalange_detail> a o:App,
+        <http://www.comvantage.eu/mm#Mobile_IT_support_feature_G> ;
+    o:Name "Chalange detail" ;
+    o:hasSuccessionType o:OR ;
+    o:instanceOf o:DC21_Shop_Challanges_Ideas .
+
+<http://www.comvantage.eu/dc21shop#Mobile_IT_support_feature_G-512247-Chalange_idea_detail> a o:App,
+        <http://www.comvantage.eu/mm#Mobile_IT_support_feature_G> ;
+    o:Name "Chalange idea detail" ;
+    o:hasSuccessionType o:OR ;
+    o:instanceOf o:DC21_Shop_Challanges_Idea_Detail .
+
+<http://www.comvantage.eu/dc21shop#Mobile_IT_support_feature_G-512250-Individual_design> a o:App,
+        <http://www.comvantage.eu/mm#Mobile_IT_support_feature_G> ;
+    o:Name "Individual design" ;
+    o:hasSuccessionType o:OR ;
+    o:instanceOf o:DC21_Shop_Individual_Shirt .
+
+o:DC21_Shop_Challanges o:hasIntent [ o:intentPurpose "ShowChallanges" ;
+            o:intentString "eu.comvantage.iaf.DC21_SHOP_CHALLANGES" ] .
+
+o:DC21_Shop_Challanges_Idea_Detail o:hasIntent [ o:intentPurpose "ShowChallangesIdeaDetail" ;
+            o:intentString "eu.comvantage.iaf.DC21_SHOP_CHALLANGES_IDEA_DETAIL" ] .
+
+o:DC21_Shop_Challanges_Ideas o:hasIntent [ o:intentPurpose "ShowChallangesIdeas" ;
+            o:intentString "eu.comvantage.iaf.DC21_SHOP_CHALLANGES_IDEAS" ] .
+
+o:DC21_Shop_Challanges_Participate o:hasIntent [ o:intentPurpose "ShowChallangesParticipate" ;
+            o:intentString "eu.comvantage.iaf.DC21_SHOP_CHALLANGES_PARTICIPATE" ] .
+
+o:DC21_Shop_Dashboard o:hasIntent [ o:intentPurpose "ShowDashboard" ;
+            o:intentString "eu.comvantage.iaf.DC21_SHOP_DASHBOARD" ] .
+
+o:DC21_Shop_Embroidery o:hasIntent [ o:intentPurpose "ShowEmbroidery" ;
+            o:intentString "eu.comvantage.iaf.DC21_SHOP_EMBROIDERY" ] .
+
+o:DC21_Shop_Individual_Shirt o:hasIntent [ o:intentPurpose "ShowIndividualShirtDesign" ;
+            o:intentString "eu.comvantage.iaf.DC21_SHOP_INDIVIDUAL_SHIRT" ] .
+
+o:DC21_Shop_Login o:hasIntent [ o:intentPurpose "ShowLogin" ;
+            o:intentString "eu.comvantage.iaf.DC21_SHOP_LOGIN" ] .
+
+o:DC21_Shop_News o:hasIntent [ o:intentPurpose "ShowNews" ;
+            o:intentString "eu.comvantage.iaf.DC21_SHOP_NEWS" ] .
+
+o:DC21_Shop_Price_Delivery o:hasIntent [ o:intentPurpose "ShowPriceDelivery" ;
+            o:intentString "eu.comvantage.iaf.DC21_SHOP_PRICE_DELIVERY" ] .
+
+o:DC21_Shop_Products o:hasIntent [ o:intentPurpose "ShowPRODUCTS" ;
+            o:intentString "eu.comvantage.iaf.DC21_SHOP_PRODUCTS" ] .
+
+o:DC21_Shop_Recommendation o:hasIntent [ o:intentPurpose "ShowRecommendation" ;
+            o:intentString "eu.comvantage.iaf.DC21_SHOP_RECOMMENDATION" ] .
+
+o:DC21_Shop_Shirt_Detail o:hasIntent [ o:intentPurpose "ShowShirtDetail" ;
+            o:intentString "eu.comvantage.iaf.DC21_SHOP_STANDARD_SHIRT" ] .
+
+o:DC21_Shop_Shopping_Cart o:hasIntent [ o:intentPurpose "ShowShoppingCart" ;
+            o:intentString "eu.comvantage.iaf.DC21_SHOP_SHOPPING_CART" ] .
+
+o:IAFLogin_Zvy4kvB-fH9T o:hasIntent [ o:intentPurpose "Login" ;
+            o:intentString "eu.comvantage.iaf.LOGIN" ],
+        [ o:intentPurpose "Logout" ;
+            o:intentString "eu.comvantage.iaf.LOGOUT" ] ;
+    o:requiresApp o:OIFileManager_uNSUZ7-rb3mm .
+
+o:IAFManagementComponent_ZIRiErVxZHc- a o:ManagementApp ;
+    o:hasIntent [ o:intentPurpose "StartWorkflow" ;
+            o:intentString "eu.comvantage.iaf.START_WORKFLOW" ] ;
+    o:requiresApp o:OIFilEManager_uNSUZ7-rb3mm .
+
+o:TUDSimpleList_NryuJDGzjNXl o:hasIntent [ o:intentPurpose "ShowSimpleList" ;
+            o:intentString "eu.comvantage.iaf.SIMPLE_LIST" ],
+        [ o:intentPurpose "ShowDecision" ;
+            o:intentString "eu.comvantage.iaf.DECISION" ] .
+
+o:TUDSimpleMessage_MBrh2UmSe3AP o:hasIntent [ o:intentPurpose "ShowSimpleMessage" ;
+            o:intentString "eu.comvantage.iaf.SIMPLE_MESSAGE" ] .
+
+<http://www.comvantage.eu/dc21shop#Mobile_IT_support_feature_G-512211-Customer_Login> a o:App,
+        <http://www.comvantage.eu/mm#Mobile_IT_support_feature_G> ;
+    o:Name "Customer Login" ;
+    o:hasSuccessionType o:OR ;
+    o:instanceOf o:DC21_Shop_Login .
+
+[] a o:Orchestration ;
+    o:hasAppEnsemble [ a o:AppEnsemble ;
+            o:Name "AE_2014-8-4_14h3m29s" ;
+            o:hasDefaultIntent "eu.comvantage.iaf.SIMPLE_MESSAGE" ;
+            o:hasEntryPoint <http://www.comvantage.eu/dc21shop#Mobile_IT_support_feature_G-512211-Customer_Login> ;
+            o:requiresApp o:IAFLogin_Zvy4kvB-fH9T,
+                o:IAFManagementComponent_ZIRiErVxZHc-,
+                o:TUDSimpleList_NryuJDGzjNXl,
+                o:TUDSimpleMessage_MBrh2UmSe3AP ] .
+

@@ -1,0 +1,60 @@
+#################################################
+#
+# This file provides some additional context for the BPM
+#
+#################################################
+
+@prefix o: <http://comvantage.eu/ontologies/iaf/2013/0/Orchestration.owl#> .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+# Connect apps in the orchestration model with real apps
+# For each of the "Mobile_IT_support_feature" nodes that are found in your model you can manually
+# assign an app from the app pool here. You can copy this file and add your own entries.
+# Later this mechanism will be replaced by a semi-automated app selection.
+
+<http://www.comvantage.eu/dc21shop#Mobile_IT_support_feature_G-512211-Customer_Login>
+    o:instanceOf	o:DC21_Shop_Login .
+  
+<http://www.comvantage.eu/dc21shop#Mobile_IT_support_feature_G-512214-DC21_Shop_Dashboard>
+    o:instanceOf	o:DC21_Shop_Dashboard .
+	
+<http://www.comvantage.eu/dc21shop#Mobile_IT_support_feature_G-512217-News>
+    o:instanceOf	o:DC21_Shop_News .
+	
+<http://www.comvantage.eu/dc21shop#Mobile_IT_support_feature_G-512220-View_Shirts>
+    o:instanceOf	o:DC21_Shop_Products .
+	
+<http://www.comvantage.eu/dc21shop#Mobile_IT_support_feature_G-512223-Design_Contest>
+    o:instanceOf	o:DC21_Shop_Challanges .
+	
+<http://www.comvantage.eu/dc21shop#Mobile_IT_support_feature_G-512226-Recommendation>
+    o:instanceOf	o:DC21_Shop_Recommendation .
+	
+<http://www.comvantage.eu/dc21shop#Mobile_IT_support_feature_G-512229-Shirt_detail>
+    o:instanceOf	o:DC21_Shop_Shirt_Detail .
+
+<http://www.comvantage.eu/dc21shop#Mobile_IT_support_feature_G-512232-Embroidery>
+    o:instanceOf	o:DC21_Shop_Embroidery .
+	
+<http://www.comvantage.eu/dc21shop#Mobile_IT_support_feature_G-512235-Price_and_delivery>
+    o:instanceOf	o:DC21_Shop_Price_Delivery .
+ 
+<http://www.comvantage.eu/dc21shop#Mobile_IT_support_feature_G-512238-Shopping_cart>
+    o:instanceOf	o:DC21_Shop_Shopping_Cart .
+	
+<http://www.comvantage.eu/dc21shop#Mobile_IT_support_feature_G-512250-Individual_design>
+    o:instanceOf	o:DC21_Shop_Individual_Shirt .
+	
+<http://www.comvantage.eu/dc21shop#Mobile_IT_support_feature_G-512244-Chalange_detail>
+    o:instanceOf	o:DC21_Shop_Challanges_Ideas .
+	
+<http://www.comvantage.eu/dc21shop#Mobile_IT_support_feature_G-512247-Chalange_idea_detail>
+    o:instanceOf	o:DC21_Shop_Challanges_Idea_Detail .
+	
+<http://www.comvantage.eu/dc21shop#Mobile_IT_support_feature_G-512241-Chalange_submit_idea>
+    o:instanceOf	o:DC21_Shop_Challanges_Participate .

@@ -1,0 +1,275 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#E4E4E4"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"    
+    tools:context="com.example.challenge_participate.MainActivity"
+    tools:ignore="MergeRootFrame">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/listitem_background"
+        android:layout_marginTop="5dp"        
+        android:padding="5dp"
+        android:orientation="horizontal" >
+
+ 			<ImageView
+		        android:id="@+id/imageView1"
+		        android:layout_width="70dp"
+		        android:layout_height="50dp"
+		        android:src="@drawable/seznam_slika"
+		        android:padding="8sp" />
+
+		    <RelativeLayout
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:paddingTop="5sp" 
+		        android:layout_gravity="center_vertical">
+			         
+		        
+		        
+			   <TextView
+			        android:id="@+id/lblChallenge"
+			        style="@style/malaPisava.italic"
+			        android:layout_width="90sp"
+			        android:layout_height="wrap_content"
+			        android:text="Challenge" />
+	        
+	        	<TextView
+			        android:id="@+id/txtChallenge"
+			        style="@style/malaPisava"
+			        android:layout_width="800sp"
+			        android:layout_height="wrap_content"
+			        android:layout_toRightOf="@id/lblChallenge"
+			        android:layout_alignBaseline="@id/lblChallenge"
+			        android:text="Design the ultimate Dresscode21 Shirt with our designing tool. It should look linear, dynamic and young." />        
+	        
+	        </RelativeLayout>
+	        
+	    </LinearLayout>
+	
+	
+	<RelativeLayout
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content">
+	    
+	
+    <LinearLayout
+        android:id="@+id/layout_upper"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"       
+        android:background="#f2f2f2"
+        android:orientation="vertical"
+        android:paddingTop="10dp"
+        android:paddingLeft="10dp" 
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp">
+
+        <EditText
+            android:id="@+id/edtTitle"
+            android:layout_width="match_parent"
+            android:layout_height="63dp"
+            android:background="@drawable/textbox_background"
+            android:gravity="top"
+            android:hint="   Enter a short title"
+            android:maxLength="50"
+            android:inputType="textMultiLine"
+            android:padding="10dp" >
+        </EditText>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="5sp" >
+
+            <TextView
+                android:id="@+id/lbltitle_red"
+                style="@style/ultramalaPisava.red"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:text="50" />
+
+            <TextView
+                android:id="@+id/lbltitle"
+                style="@style/ultramalaPisava"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/lbltitle_red"
+                android:text="characters left" />
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/edtIdea"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/textbox_background"
+            android:gravity="top"
+            android:maxLength="400"            
+            android:hint="   Describe your idea"
+            android:inputType="textMultiLine"
+            android:padding="10dp" >
+        </EditText>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="5sp" >
+
+            <TextView
+                android:id="@+id/lblidea_red"
+                style="@style/ultramalaPisava.red"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:text="400" />
+
+            <TextView
+                android:id="@+id/lblidea"
+                style="@style/ultramalaPisava"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/lblidea_red"
+                android:text="characters left" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="5sp" >
+
+            <EditText
+                android:id="@+id/edtImage"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/textbox_background"
+                android:gravity="top"
+                android:hint="   Upload file"
+                android:inputType="text"
+                android:padding="10dp" >
+            </EditText>
+
+            <TextView
+                android:id="@+id/lblfile"
+                style="@style/ultramalaPisava"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/edtImage"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp"
+                android:text="File format: png, jpg, pdf" />
+
+            <ImageView
+                android:id="@+id/btnUpload"
+                android:layout_width="wrap_content"
+                android:layout_height="34dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="25dp"
+                android:clickable="true"
+                android:paddingRight="5dp"
+                android:src="@drawable/imageselector_upload" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/lblagreement"
+            style="@style/ultramalaPisava"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:paddingLeft="10dp"
+            android:paddingTop="35dp"
+            android:text="By participating, you agree to the Dresscode21 End User License Agreement and Conditions of Use and Sale." />
+
+            <ImageView
+                android:id="@+id/btnSubmitIdea"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:clickable="true"
+                android:paddingRight="5dp"
+                android:src="@drawable/imageselector_submitidea_gray" />
+               
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:background="#424242"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_below="@id/layout_upper">
+
+        <ImageView
+            android:id="@+id/btnButtons"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/drawing_bottom" />
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@id/layout_upper">        
+        
+        <ImageView
+            android:id="@+id/imgToolbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:src="@drawable/toolbar" />        
+        
+        <RelativeLayout
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="27dp"
+			android:layout_width="fill_parent"
+        	android:layout_height="fill_parent"
+        	android:background="@drawable/textbox_background"
+        	android:orientation="vertical">
+            
+        	<ImageView
+	            android:id="@+id/imgVerticalToolbar_1"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:paddingTop="8dp"
+	            android:paddingRight="1dp"
+	            android:layout_alignParentRight="true"
+	            android:src="@drawable/vertical_toolbar_1" />        
+            
+        	<ImageView
+	            android:id="@+id/imgVerticalToolbar_2"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:paddingBottom="8dp"
+	            android:paddingRight="1dp"
+	            android:layout_alignParentRight="true"
+	            android:layout_alignParentBottom="true"
+	            android:src="@drawable/vertical_toolbar_2" />          	
+            
+        	<ImageView
+	            android:id="@+id/imgContent"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_centerInParent="true"/>          	        	    
+            
+        </RelativeLayout>
+        
+        
+    </LinearLayout>
+    
+
+    </RelativeLayout>
+</LinearLayout>
+

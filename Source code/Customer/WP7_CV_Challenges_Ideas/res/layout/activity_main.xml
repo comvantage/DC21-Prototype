@@ -1,0 +1,319 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#E4E4E4"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"    
+    tools:context="com.example.challenges_ideas.MainActivity"    
+    tools:ignore="MergeRootFrame">
+
+	<LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:background="@drawable/listitem_background"
+	    android:orientation="vertical">    
+    
+		<LinearLayout
+		    android:id="@+id/layAnim"
+		    android:layout_width="match_parent"
+		    android:layout_height="104dp"
+		    android:orientation="horizontal" >
+		
+			    <ImageView
+			        android:id="@+id/imageView1"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:padding="12dp"
+			        android:src="@drawable/seznam_slika" />
+		
+			    <RelativeLayout
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:paddingTop="12sp" >
+				    
+				    <TextView
+				        android:id="@+id/txtNaziv"
+				        android:layout_width="1000sp"
+				        android:layout_height="wrap_content"
+				        android:text="4th Dresscode21 Shirt Design Contest"
+				        style="@style/srednjaPisava.bold.orange" />	        
+			        
+				    <TextView
+				        android:id="@+id/lblChallenge"
+				        style="@style/ultramalaPisava.italic"
+				        android:layout_width="70sp"
+				        android:layout_height="wrap_content"
+				        android:layout_below="@id/txtNaziv"
+				        android:paddingTop="10dp"
+				        android:text="Challenge" />
+		        
+		        	<TextView
+				        android:id="@+id/txtChallenge"
+				        style="@style/ultramalaPisava"
+				        android:layout_width="900sp"
+				        android:layout_height="wrap_content"
+				        android:layout_toRightOf="@id/lblChallenge"
+				        android:layout_alignBaseline="@id/lblChallenge"
+				        android:text="Design the ultimate Dresscode21 Shirt with our designing tool. It should look linear, dynamic and young." />
+				    
+				    
+				    <TextView
+				        android:id="@+id/lblPrize"
+				        android:layout_height="wrap_content"
+				        android:layout_width="70sp"
+				        android:text="Prize"
+				        android:layout_below="@id/lblChallenge"
+				        style="@style/ultramalaPisava.italic" />	        	        
+		
+		        	<TextView
+				        android:id="@+id/txtPrize"
+				        style="@style/ultramalaPisava"
+				        android:layout_width="900sp"
+				        android:layout_height="wrap_content"
+				        android:layout_toRightOf="@id/lblPrize"
+				        android:layout_alignBaseline="@id/lblPrize"
+				        android:text="Win your own collection and 2 shirts" />
+				    		    
+				    
+				    <TextView
+				        android:id="@+id/lblDuration"
+				        android:layout_width="70sp"
+				        android:layout_height="wrap_content"
+				        android:layout_below="@id/lblPrize"
+				        android:text="Duration"
+				        style="@style/ultramalaPisava.italic" />	        	        
+		
+			       	<TextView
+			       	    android:id="@+id/txtDuration"
+			       	    style="@style/ultramalaPisava"
+			       	    android:layout_width="900sp"
+			       	    android:layout_height="wrap_content"
+			       	    android:layout_alignBaseline="@id/lblDuration"
+			       	    android:layout_toRightOf="@id/lblDuration"
+			       	    android:paddingBottom="8sp"
+			       	    android:text="1.10.2014 - 31.12.2014, 12pm" />
+			       	
+				    <TextView
+				        android:id="@+id/lblShirtSelection"
+				        style="@style/ultramalaPisava.italic"
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content"
+				        android:layout_below="@id/lblDuration"
+				        android:paddingTop="17dp"
+				        android:text="Shirt selection" />
+	        	        
+¸
+				    <TextView
+				        android:id="@+id/txtShirtSelection"
+				        android:layout_width="fill_parent"
+				        android:layout_height="wrap_content"
+				        android:layout_below="@id/lblShirtSelection"
+				        android:text="@string/shirtselection"
+				        android:paddingRight="8sp"
+				        style="@style/ultramalaPisava" />	        	        
+
+			        <TextView
+				        android:id="@+id/lblDesignRestrictions"
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content"
+				        android:layout_below="@id/txtShirtSelection"
+				        android:text="Design restrictions"
+				        android:paddingTop="10sp"
+				        style="@style/ultramalaPisava.italic" />	
+
+				    <TextView
+				        android:id="@+id/txtDesignRestrictions"
+				        android:layout_width="fill_parent"
+				        android:layout_height="wrap_content"
+				        android:layout_below="@id/lblDesignRestrictions"
+				        android:text="@string/designrestrictions"
+				        android:paddingRight="8sp"
+				        style="@style/ultramalaPisava" />
+				    
+				    <TextView
+				        android:id="@+id/lblHyperLink"
+				        android:layout_width="fill_parent"
+				        android:layout_height="wrap_content"
+				        android:layout_below="@id/txtDesignRestrictions"
+				        android:text="FAQ, Legal Notice, Print Description"
+				        android:paddingTop="10sp"
+				        style="@style/ultramalaPisava.blue" />		        	        
+			        			        
+			        			       	
+			    </RelativeLayout>
+			    
+			    		   
+		</LinearLayout>
+		
+		
+			    <ImageView
+			        android:id="@+id/imageView2"
+			        android:layout_gravity="center_horizontal"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:src="@drawable/delimiter2"
+			        android:padding="3sp" />		
+		
+	        <TextView
+	            android:id="@+id/txtMore"
+	            style="@style/malaPisava"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:clickable="true"
+	            android:focusable="true"
+	            android:gravity="center_horizontal"
+	            android:onClick="onMoreInfo"
+	            android:paddingBottom="5sp"
+	            android:text="More info" />
+				
+	</LinearLayout>
+
+<!-- <LinearLayout
+        android:layout_width="match_parent"
+        
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/txtNaziv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="214 ideas"
+			style="@style/malaPisava"
+			android:paddingTop="8sp"
+			android:paddingBottom="10sp"/>
+
+    </LinearLayout> -->   
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:orientation="horizontal"
+        android:paddingLeft="8dp" 
+        android:layout_marginTop="8dp">
+
+        <TextView
+            android:id="@+id/txtSort"
+            style="@style/malaPisava"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="6sp"
+            android:paddingRight="630dp"
+            android:paddingTop="6sp"
+            android:text="Sort ideas according to" />
+
+        <TextView
+            android:id="@+id/txtTitle"
+            style="@style/malaPisava.bold.orange"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusable="true"
+            android:onClick="onClick"
+            android:paddingLeft="5sp"
+            android:paddingRight="5sp"
+            android:text="Title" />
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="|"
+            style="@style/malaPisava"/>        
+        
+        <TextView
+            android:id="@+id/txtDate"
+            style="@style/malaPisava.bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:onClick="onClick"
+            android:paddingLeft="5sp"
+            android:paddingRight="5sp"
+            android:text="Date" />
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="|"
+            style="@style/malaPisava"/>
+        
+        <TextView
+            android:id="@+id/txtOwner"
+            style="@style/malaPisava.bold.orange"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:onClick="onClick"
+            android:paddingLeft="5sp"
+            android:paddingRight="5sp"
+            android:text="Owner" />
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="|"
+            style="@style/malaPisava"/>          
+                      
+        <TextView
+            android:id="@+id/txtLikes"
+            style="@style/malaPisava.bold.orange"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:onClick="onClick"
+            android:paddingLeft="5sp"
+            android:paddingRight="5sp"
+            android:text="Likes" />
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="|"
+            style="@style/malaPisava"/>        
+        
+        <TextView
+            android:id="@+id/txtFeedback"
+            style="@style/malaPisava.bold.orange"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:onClick="onClick"
+            android:paddingLeft="5sp"
+            android:paddingRight="5sp"
+            android:text="Feedback" />
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="|"
+            style="@style/malaPisava"/>        
+        
+        <TextView
+            android:id="@+id/txtViews"
+            style="@style/malaPisava.bold.orange"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:onClick="onClick"
+            android:paddingLeft="5sp"
+            android:paddingRight="5sp"
+            android:text="Views" />
+        
+    </LinearLayout>
+
+    <GridView
+        android:id="@+id/gridView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:numColumns="3"
+        android:layout_marginTop="5dp" >
+        
+    </GridView>   
+    
+</LinearLayout>    
